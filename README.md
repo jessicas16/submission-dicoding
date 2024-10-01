@@ -16,7 +16,7 @@ Proyek ini bertujuan untuk menganalisis data dari dataset E-Commerce publik, den
         pip install streamlit
         pip install -r ./dashboard/requirements.txt
     ```
-2. Masuk ke direktori poyek
+2. Masuk ke direktori proyek
     ```shell
         cd dashboard/
         streamlit run main.py
