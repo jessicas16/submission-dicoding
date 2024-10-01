@@ -1,10 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import seaborn as sns
-import urllib
 import streamlit as st
-from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Menampilkan judul aplikasi
