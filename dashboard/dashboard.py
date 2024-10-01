@@ -46,6 +46,14 @@ ax.grid(True)
 ax.tick_params(axis='x', rotation=45)
 st.pyplot(fig)
 
+# Menampilkan penjelasan visualisasi Tren Penjualan
+with st.expander("See Explanation"):
+    st.write("""
+        Data Tertinggi: Pada bulan Oktober 2017, penjualan mencapai puncaknya dengan lebih dari 7.000 pesanan. \n
+        Data Terendah: Penjualan terendah terjadi pada bulan September 2016 dengan hampir 0 pesanan. \n
+        Wawasan: Penjualan meningkat secara signifikan dari awal 2017 dan mencapai puncaknya di akhir tahun. Kemudian, tren mulai turun setelah awal tahun 2018.
+    """)
+
 # Menampilkan visualisasi Metode Pembayaran
 st.subheader("Distribusi Metode Pembayaran")
 
@@ -61,6 +69,14 @@ ax.set_ylabel('Jumlah Penggunaan')
 ax.grid(True)
 st.pyplot(fig)
 
+# Menampilkan penjelasan visualisasi Metode Pembayaran
+with st.expander("See Explanation"):
+    st.write("""
+        Metode Pembayaran Tertinggi: Kartu Kredit digunakan paling sering dengan lebih dari 75.000 kali penggunaan.  \n
+        Metode Pembayaran Terendah: Voucher digunakan paling sedikit, dengan kurang dari 5.000 kali penggunaan. \n
+        Wawasan: Kartu kredit adalah metode pembayaran yang paling dominan, sedangkan metode alternatif seperti voucher dan kartu debit hanya digunakan oleh sebagian kecil pelanggan.
+    """)
+
 # Menampilkan visualisasi Distribusi Ulasan Pelanggan
 st.subheader("Distribusi Skor Ulasan Pelanggan")
 
@@ -75,3 +91,11 @@ ax.set_xlabel('Skor Ulasan')
 ax.set_ylabel('Jumlah Ulasan')
 ax.grid(True)
 st.pyplot(fig)
+
+# Menampilkan penjelasan visualisasi ulasan pelanggan
+with st.expander("See Explanation"):
+    st.write("""
+        kor Ulasan Tertinggi: Skor 5 adalah skor yang paling sering diberikan oleh pelanggan, dengan lebih dari 60.000 ulasan.  \n
+        Skor Ulasan Terendah: Skor 2 adalah yang paling jarang diberikan, dengan kurang dari 5.000 ulasan. \n
+        Wawasan: Sebagian besar pelanggan memberikan ulasan positif dengan skor tinggi, menunjukkan kepuasan yang tinggi terhadap produk dan layanan. Namun, ada juga sejumlah kecil pelanggan yang memberikan skor rendah, yang mungkin perlu ditelusuri lebih lanjut.
+    """)
